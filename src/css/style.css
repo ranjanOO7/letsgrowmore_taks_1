@@ -176,13 +176,14 @@ hr {
 .card img {
     display: block;
     width: 100%;
+    max-width: 100%;
     transform: scale(1);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card :hover img {
-    transform: scaleY(1.125);
-    transform: scaleX(1.1);
+    min-width: 100%;
+    transform: scale(0.95);
 }
 
 .card {
@@ -224,6 +225,12 @@ hr {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 2% 3%;
+    background-image: linear-gradient(-60deg, #7ee8fa, #eec0c6);
+}
+
+.table_1,
+.table_2 {
+    border-right: 5px solid red;
 }
 
 .table_1_heading h2,
@@ -254,8 +261,13 @@ hr {
     padding: 0;
 }
 
+.buy {
+    padding: 2% 5%;
+    font: 1.5vw;
+}
+
 #sec5 {
-    background: linear-gradient(60deg, purple, cyan);
+    background: linear-gradient(60deg, rgb(71, 5, 116), cyan);
 }
 
 .sec5_head {
@@ -308,4 +320,61 @@ hr {
 
 .members_image {
     border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.img_overlay {
+    opacity: 0;
+    /* padding: 5% 0; */
+    position: absolute;
+    text-align: center;
+    width: 128px;
+    height: 128px;
+    max-width: 100%;
+    background: linear-gradient(#6e73fcb9, #ad1deba4);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.img_overlay i {
+    font-size: 25px;
+    text-align: center;
+}
+
+#overlay1,
+#overlay4 {
+    margin-left: 23.6%;
+}
+
+#overlay2,
+#overlay5 {
+    margin-left: 46.3%;
+}
+
+#overlay3,
+#overlay6 {
+    margin-left: 68.2%;
+}
+
+.members_image_container:hover .img_overlay {
+    opacity: 1;
+    z-index: 500;
+}
+
+.members_image_container:hover .members_image {
+    opacity: 0.5;
+}
+
+.members h2 {
+    padding: 1% 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.25vw;
+}
+.members p {
+    text-align: center;
+    font-size: 1vw;
 }
