@@ -453,7 +453,71 @@ hr {
     font-weight: 400;
     font-size: 1.25vw;
 }
+
 .members p {
     text-align: center;
     font-size: 1vw;
+}
+
+#sec7 {
+    /* background-: ; */
+    padding: 0;
+    margin: 0;
+}
+
+.sec7_head {
+    text-align: center;
+}
+
+.sec7_head h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.image_controller {
+    position: absolute;
+}
+
+.image_controller button {
+    background: transparent;
+    border: none;
+}
+
+#controller_left,
+#controller_right {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(255, 0, 0);
+}
+
+#controller_right {
+    right: 0;
+}
+
+.gallery_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_image {
+    display: none;
+}
+
+.main_image img {
+    width: 500px;
+    height: 500px;
+}
+
+.slider_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider_image img {
+    width: 65px;
+    height: 65px;
 }

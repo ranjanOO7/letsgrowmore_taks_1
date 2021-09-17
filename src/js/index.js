@@ -30,3 +30,25 @@ ELEMENTS.forEach((element, index) => {
         ELEMENTS_SPAN[index].style.top = e.pageY - element.offsetTop + "px";
     });
 });
+
+var slideIndex = 1;
+
+const slideChange = (n) => {
+    slideShow((slideIndex += n));
+};
+
+const slideJump = (n) => {
+    slideShow((slideIndex = n));
+};
+
+const slideShow = (n) => {
+    var i;
+    var slideImages = document.getElementsByClassName("main_image");
+    for (let i = 0; i < slideImages.length; i++) {
+        // const element = array[i];
+        slideImages[i].style.display = "none";
+    }
+    slideImages[slideIndex - 1].style.display = "block";
+};
+
+slideShow(slideIndex);
