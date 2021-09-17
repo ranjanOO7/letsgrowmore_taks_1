@@ -44,15 +44,67 @@
 }
 
 .sec1_btn {
+    --width: 100%;
+    --time: 0.5s;
+    position: relative;
+    display: inline-block;
+    height: 2.5rem;
     padding: 0.5rem;
-    color: rgb(255, 255, 255);
-    background-color: purple;
+    border-radius: 8px;
+    color: white;
+    background: #0f117a;
+    overflow: hidden;
 }
 
-.sec1_btn:hover {
-    color: rgb(40, 40, 41);
-    background-color: rgb(255, 255, 0);
-    transform: 0.5sec ease-in;
+.sec1_btn text {
+    position: relative;
+    z-index: 5;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color var(--time);
+}
+
+.sec1_btn span {
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    transition: width var(--time), padding-top var(--time);
+}
+
+.sec1_btn:hover span {
+    width: calc(var(--width) * 2.25);
+    padding-top: calc(var(--width) * 2.25);
+}
+
+.sec1_btn.FLASH:hover text {
+    color: white;
+}
+
+.sec1_btn.FLASH span {
+    background: #fc5185;
+}
+
+.animated {
+    --angle: 5deg;
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    25% {
+        transform: rotate(clac(var(--angle) * -1));
+    }
+    50% {
+        transform: rotate(var(--angle));
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .sec1_back {
@@ -158,19 +210,34 @@ hr {
     border-top: 5px solid rgba(0, 0, 0, 0.3);
 }
 
-.sec3 {
-    padding: 5% 0;
+#sec3 {
+    padding: 1% 0;
+    /* background-color: #96c8fb;
+    background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%); */
 }
 
 .sec3_header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
     text-align: center;
     padding: 2.5% 0;
+    color: white;
+    text-shadow: 0px 2px 5px #0d324d;
 }
 
 .projects {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card {
+    text-align: center;
+    width: 400px;
+}
+
+.card figure {
+    margin: 0;
 }
 
 .card img {
@@ -186,12 +253,17 @@ hr {
     transform: scale(0.95);
 }
 
-.card {
-    width: 400px;
-}
-
 .card-img-top {
     height: 300px;
+}
+
+.card-body {
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+}
+
+.card-text {
+    color: antiquewhite;
 }
 
 #sec4 {
@@ -204,9 +276,10 @@ hr {
 
 .sec4_head h1 {
     text-align: center;
-    font: bold;
+    font-weight: bold;
     font-size: 2.5rem;
     color: rgb(95, 95, 95);
+    text-shadow: 2px 2px 5px rgb(255, 50, 100);
 }
 
 .sec4_body {
@@ -226,6 +299,12 @@ hr {
     flex-direction: column;
     padding: 2% 3%;
     background-image: linear-gradient(-60deg, #7ee8fa, #eec0c6);
+}
+
+.table_1:hover,
+.table_2:hover,
+.table_3:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .table_1,
