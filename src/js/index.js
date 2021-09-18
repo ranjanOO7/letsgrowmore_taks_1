@@ -44,11 +44,21 @@ const slideJump = (n) => {
 const slideShow = (n) => {
     var i;
     var slideImages = document.getElementsByClassName("main_image");
+    var bottomImages = document.getElementsByClassName("slider_image");
+    console.log(bottomImages);
+    if (n <= 0) {
+        slideIndex = slideImages.length;
+    }
+    if (n > slideImages.length) {
+        slideIndex = 1;
+    }
+    // console.log("slideIndex: " + slideIndex);
     for (let i = 0; i < slideImages.length; i++) {
-        // const element = array[i];
         slideImages[i].style.display = "none";
+        bottomImages[i].classList.remove("active");
     }
     slideImages[slideIndex - 1].style.display = "block";
+    bottomImages[slideIndex - 1].classList.add("active");
 };
 
 slideShow(slideIndex);

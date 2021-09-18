@@ -521,8 +521,12 @@
                 </div>
                 <div class="sec7_body">
                     <div class="image_controller">
-                        <button onclick="" id="controller_left"><</button>
-                        <button onclick="" id="controller_right">></button>
+                        <button onclick="slideChange(-1)" id="controller_left">
+                            <
+                        </button>
+                        <button onclick="slideChange(+1)" id="controller_right">
+                            >
+                        </button>
                     </div>
                     <div class="gallery_image_container">
                         <div class="main_image">
@@ -530,6 +534,7 @@
                                 <img
                                     src="./src/images/gallery/1.jpg"
                                     alt="image 1"
+                                    loading="eager"
                                 />
                             </figure>
                         </div>
@@ -700,6 +705,7 @@
                     </div>
                 </div>
             </section>
+            <section id="sec7"></section>
         </div>
         <script src="./src/js/index.js"></script>
         <script
