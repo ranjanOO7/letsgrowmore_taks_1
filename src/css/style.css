@@ -609,7 +609,7 @@ hr {
 }
 
 .btn_inactive {
-    background-color: rgb(255, 115, 0);
+    background-color: rgb(202, 34, 5);
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -617,7 +617,64 @@ hr {
 }
 
 .btn_active {
+    height: 80px;
     background-color: cyan;
     border-right: 2px;
     transition: 0.5s ease-in;
+}
+
+#sec9 {
+    padding: 10% 0 5% 0;
+}
+
+.sec9_head {
+    text-align: center;
+}
+
+.sec9_head h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.sec9_body {
+    padding: 5% 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.blog {
+    text-align: center;
+}
+
+.blog img {
+    width: 200px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(108, 143, 43, 0.5),
+        0 6px 20px 0 rgba(136, 153, 37, 0.5);
+}
+
+.blog_heading {
+    padding: 1%;
+}
+
+.blog_heading h3 {
+    font-size: 1.5rem;
+}
+
+.blog_date h4 {
+    font-size: 1.25rem;
+}
+
+.blog_text {
+    padding: 0 20%;
+    text-align: center;
+}
+
+.blog_button button {
+    border: none;
+    cursor: pointer;
 }
