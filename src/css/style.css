@@ -421,6 +421,8 @@ hr {
 .img_overlay i {
     font-size: 25px;
     text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 #overlay1,
@@ -439,12 +441,12 @@ hr {
 }
 
 .members_image_container:hover .img_overlay {
-    opacity: 1;
+    opacity: 0.7;
     z-index: 500;
 }
 
 .members_image_container:hover .members_image {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .members h2 {
@@ -531,6 +533,7 @@ hr {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 0 0 3% 0;
 }
 
 .slider_image img {
@@ -541,4 +544,80 @@ hr {
 
 .active {
     opacity: 0.5;
+}
+
+#sec8 {
+    /* background-image: url("src\images\artur-kechter-QAp7VQOmcLE-unsplash.jpg"); */
+    margin: 0;
+}
+
+.sec8_back {
+    position: absolute;
+    z-index: -5;
+}
+
+.sec8_back img {
+    width: 100vw;
+    height: 50vh;
+    opacity: 0.8;
+}
+
+.sec8_head {
+    padding: 5% 0;
+    z-index: 5;
+    text-align: center;
+}
+
+.sec8_head h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.sec8_body {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #sec8_eml {
+    width: 0;
+} */
+.eml_inactive {
+    width: 0;
+    height: 0;
+    display: none;
+    transition: 1s ease-in-out;
+}
+.eml_active {
+    width: 185px;
+    height: 30px;
+    display: flex;
+    transition: 1s ease-in-out;
+}
+
+/* #sec8_submit{
+    padding: 20%;
+} */
+
+.sec8_submit_btn {
+    height: 50px;
+    width: 100px;
+    background: transparent;
+    border: none;
+}
+
+.btn_inactive {
+    background-color: rgb(255, 115, 0);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.btn_active {
+    background-color: cyan;
+    border-right: 2px;
+    transition: 0.5s ease-in;
 }

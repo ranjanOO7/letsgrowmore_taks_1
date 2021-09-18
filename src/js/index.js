@@ -45,14 +45,13 @@ const slideShow = (n) => {
     var i;
     var slideImages = document.getElementsByClassName("main_image");
     var bottomImages = document.getElementsByClassName("slider_image");
-    console.log(bottomImages);
+    // console.log(bottomImages);
     if (n <= 0) {
         slideIndex = slideImages.length;
     }
     if (n > slideImages.length) {
         slideIndex = 1;
     }
-    // console.log("slideIndex: " + slideIndex);
     for (let i = 0; i < slideImages.length; i++) {
         slideImages[i].style.display = "none";
         bottomImages[i].classList.remove("active");
@@ -62,3 +61,26 @@ const slideShow = (n) => {
 };
 
 slideShow(slideIndex);
+
+// Section 8 "Sgn Up form"
+
+const signupButton = document.getElementById("sec8_submit");
+const emlInput = document.getElementById("sec8_eml");
+
+const toggleSignupButton = () => {
+    // alert("Button is clicked");
+    console.log("call toggleSignupButton function");
+    if (signupButton.classList.contains("btn_inactive") === true) {
+        signupButton.classList.remove("btn_inactive");
+        signupButton.classList.add("btn_active");
+        emlInput.classList.remove("eml_inactive");
+        emlInput.classList.add("eml_active");
+    } else {
+        signupButton.classList.remove("btn_active");
+        signupButton.classList.add("btn_inactive");
+        emlInput.classList.remove("eml_active");
+        emlInput.classList.add("eml_inactive");
+    }
+};
+
+// signupButton.addEventListener("click", toggleSignupButton());
