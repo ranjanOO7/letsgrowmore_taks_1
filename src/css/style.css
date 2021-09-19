@@ -625,6 +625,7 @@ hr {
 
 #sec9 {
     padding: 10% 0 5% 0;
+    margin-bottom: 2.5%;
 }
 
 .sec9_head {
@@ -679,18 +680,65 @@ hr {
     cursor: pointer;
 }
 
+#sec10 {
+    background-color: #f5f186;
+    background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
+}
+
 .sec10_body {
+    padding-top: 5%;
     display: grid;
     grid-template-columns: 40% 40%;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
+
 .map {
     height: 100%;
     padding: 0;
     margin: 0;
 }
+
 #googleMap {
     width: 30vw;
-    height: 50vh;
+    height: 60vh;
+}
+
+.contactForm {
+    text-align: center;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactForm form label {
+    margin-bottom: 2rem;
+}
+
+.contactForm form input {
+    width: 15vw;
+    padding: 2.5%;
+}
+
+.contactForm form textarea {
+    padding: 2.5%;
+}
+
+.contactForm form button {
+    border: none;
+    transform: scale(1);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    background-color: #08e1ae;
+}
+
+.contactForm form button:hover {
+    transform: scale(1.05);
+    background-color: #08e1ae;
+    background-image: linear-gradient(-180deg, #08e1ae 0%, #98de5b 74%);
+    transition: 0.2s ease-out;
 }

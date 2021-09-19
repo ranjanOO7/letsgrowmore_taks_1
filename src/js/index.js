@@ -91,7 +91,7 @@ function myMap() {
     // center:new google.maps.LatLng(26.8467,80.9462),
     var mapProp = {
         center: location,
-        zoom: 5,
+        zoom: 7,
     };
     var map = new google.maps.Map(
         document.getElementById("googleMap"),
