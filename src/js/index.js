@@ -83,4 +83,18 @@ const toggleSignupButton = () => {
     }
 };
 
-// signupButton.addEventListener("click", toggleSignupButton());
+// Section 9 "Google map"
+
+function myMap() {
+    var location = new google.maps.LatLng(26.8467, 80.9462);
+    //  { lat: 26.8467, lng: 80.9462 };
+    // center:new google.maps.LatLng(26.8467,80.9462),
+    var mapProp = {
+        center: location,
+        zoom: 5,
+    };
+    var map = new google.maps.Map(
+        document.getElementById("googleMap"),
+        mapProp
+    );
+}
