@@ -29,6 +29,19 @@
     z-index: 5;
 }
 
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.nav-item a {
+    color: antiquewhite;
+}
+
+.nav-item:hover {
+    border-bottom: 2.5px solid red;
+    transition: 0.2s ease-in-out;
+}
+
 .slogan {
     margin-right: 35%;
     color: rgb(250, 243, 243);
@@ -43,6 +56,10 @@
     font-size: 1.5vw;
     color: rgb(228, 214, 214);
     margin-bottom: 3%;
+}
+
+.sec1_btn_grp button {
+    border: none;
 }
 
 .sec1_btn {
@@ -155,19 +172,19 @@
 
 @-webkit-keyframes fade {
     from {
-        opacity: 0.2;
+        opacity: 0.3;
     }
     to {
-        opacity: 0.8;
+        opacity: 1;
     }
 }
 
 @keyframes fade {
     from {
-        opacity: 0.2;
+        opacity: 0.3;
     }
     to {
-        opacity: 0.8;
+        opacity: 1;
     }
 }
 

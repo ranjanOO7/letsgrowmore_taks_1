@@ -1,5 +1,5 @@
 const ANIMATEDCLASSNAME = "animated";
-const ELEMENTS = document.querySelectorAll(".sec1-btn");
+const ELEMENTS = document.querySelectorAll(".sec1_btn");
 const ELEMENTS_SPAN = [];
 
 ELEMENTS.forEach((element, index) => {
