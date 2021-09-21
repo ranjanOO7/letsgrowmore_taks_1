@@ -127,47 +127,47 @@
 .sec1_img_inactive {
     display: none;
     /* opacity: 0; */
-    transition: 0.5s ease-in;
+    /* transition: 0.5s ease-in; */
 }
 
 .sec1_img_active {
     /* opacity: 1; */
     display: block;
-    transition: 0.5s ease-in;
+    /* transition: 0.5s ease-in; */
 }
 
 .overlay {
     background-color: black;
-    opacity: 0.75;
+    opacity: 0.6;
     width: 99vw;
     max-width: 100vw;
     height: 100vh;
     position: absolute;
-    z-index: 0;
+    z-index: 2;
 }
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 5s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: 0.2;
     }
     to {
-        opacity: 1;
+        opacity: 0.8;
     }
 }
 
 @keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: 0.2;
     }
     to {
-        opacity: 1;
+        opacity: 0.8;
     }
 }
 

@@ -16,7 +16,7 @@ const sec1Change = () => {
     mainIndex++;
     setTimeout(() => {
         sec1Change();
-    }, 2000);
+    }, 5000);
 };
 
 sec1Change();
